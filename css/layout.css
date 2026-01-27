@@ -1,3 +1,4 @@
+
 .mob-nav-btn{
     display: none;
 
@@ -210,7 +211,87 @@ footer .inner {
  height: 60px;
  background-color: #7044c2;
 }
-.sns-icon img {
- /* max-width: 30px; */
- /* height: auto; */
+
+.sec-5{
+    position: relative;
+    height: 100vh;
+    background: url(../img/Frame0.png) no-repeat center/cover;
+}
+
+.sec-5 .content-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sec-5 .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-5 .content.active{
+    display: flex;
+}
+
+.sec-5 .menu li a.active{
+    background: #000;
+}
+
+.sec-5 .menu li a.active .font{
+    color: #fff;
+}
+
+.sec-5 h3{
+    font-size: 80px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.sec-5 p{
+    margin: 20px 0 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.sec-5 .menu{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.sec-5 .menu li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sec-5 .menu li a span:first-child{
+    font-size: 10px;
+    color: #999;
+}
+
+.sec-5 .menu li a span:last-child{
+    font-size: 13px;
+    color: #000;
 }
