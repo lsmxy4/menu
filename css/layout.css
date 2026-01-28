@@ -1,4 +1,3 @@
-
 .mob-nav-btn{
     display: none;
 
@@ -156,6 +155,7 @@ header .inner h1 {
  background: url(../img/sec-3-bg.png) no-repeat center/cover;
  height: 100%;
 }
+/* 4 */
 .sec-4 {
  padding: 200px 0;
 }
@@ -189,6 +189,94 @@ header .inner h1 {
 .sec-4-lst li:nth-child(even) a {
  margin-top: 60px;
 }
+.sec-5 {
+ height: 650px;
+}
+.sec-5 h2.tit {
+ font-size: 60px;
+}
+.sec-5-content-wrap {
+ position: relative;
+ height: 100%;
+ z-index: 0;
+}
+.sec-5 a.btn {
+ width: auto;
+ padding: 0 20px;
+}
+.sec-5-content-wrap .content {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+ z-index: 0;
+ opacity: 0;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ color: #fff;
+ transition: all 0.3s;
+}
+.sec-5-content-wrap .content.on {
+ z-index: 1;
+ opacity: 1;
+}
+.sec-5-content-wrap .content p {
+ margin: 30px 0 20px;
+}
+
+.sec-5-content-wrap .con-0 {
+ background-image: url(../img/Frame0.png);
+}
+.sec-5-content-wrap .con-1 {
+ background-image: url(../img/Frame1.png);
+}
+.sec-5-content-wrap .con-2 {
+ background-image: url(../img/Frame2.png);
+}
+.sec-5-content-wrap .con-3 {
+ background-image: url(../img/Frame3.png);
+}
+
+.sec-5-menu {
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 1;
+ display: flex;
+ gap: 10px;
+ overflow: hidden;
+ border-radius: 30px;
+}
+.sec-5-menu li a {
+ background-color: rgba(255, 255, 255, 0.212);
+ padding: 10px 20px;
+ display: flex;
+ flex-direction: column;
+ transition: all 0.3s;
+ justify-content: center;
+ font-size: 17px;
+ min-width: 150px;
+
+ align-items: center;
+}
+.sec-5-menu li a span:first-child{
+    opacity: .6;
+}
+.sec-5-menu li.active a {
+ background-color: #7044c2;
+ color: #fff;
+}
+.sec-5-menu li span {
+ color: #ffffff;
+}
+
 footer {
  background-color: #f1f1f1;
  padding: 30px 0;
@@ -211,87 +299,7 @@ footer .inner {
  height: 60px;
  background-color: #7044c2;
 }
-
-.sec-5{
-    position: relative;
-    height: 100vh;
-    background: url(../img/Frame0.png) no-repeat center/cover;
-}
-
-.sec-5 .content-wrap{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-
-.sec-5 .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.sec-5 .content.active{
-    display: flex;
-}
-
-.sec-5 .menu li a.active{
-    background: #000;
-}
-
-.sec-5 .menu li a.active .font{
-    color: #fff;
-}
-
-.sec-5 h3{
-    font-size: 80px;
-    font-weight: 800;
-    color: #fff;
-}
-
-.sec-5 p{
-    margin: 20px 0 40px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-    opacity: 0.85;
-}
-
-.sec-5 .menu{
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px;
-}
-
-.sec-5 .menu li a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 50px;
-    background: #fff;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.sec-5 .menu li a span:first-child{
-    font-size: 10px;
-    color: #999;
-}
-
-.sec-5 .menu li a span:last-child{
-    font-size: 13px;
-    color: #000;
+.sns-icon img {
+ /* max-width: 30px; */
+ /* height: auto; */
 }
