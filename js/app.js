@@ -6,6 +6,18 @@ const fixedArrow = document.querySelector(".fixed-arrow");
 const mobNavBtn = document.querySelector(".mob-nav-btn");
 const navList = document.querySelectorAll(".nav-list li");
 
+var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".mySwiper .swiper-pagination",
+      },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop:true,
+      autoplay: true
+});
+
 // [0,1,2,3]
 
 navList.forEach((btn, i) => {
