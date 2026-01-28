@@ -18,6 +18,7 @@ var swiper = new Swiper(".mySwiper", {
       autoplay: true
 });
 
+
 // [0,1,2,3]
 
 navList.forEach((btn, i) => {

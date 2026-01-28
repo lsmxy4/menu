@@ -73,6 +73,22 @@ header .inner h1 {
     background: no-repeat center/cover;
 }
 
+.mySwiper .swiper-slide.s01 {
+    background: url(../img/sec-1-bg.png);
+}
+
+.mySwiper .swiper-slide.s02 {
+    background: url(../img/maple.png);
+}
+
+.mySwiper .swiper-slide.s03 {
+    background: url(../img/tree.png);
+}
+
+.mySwiper .swiper-slide.s04 {
+    background: url(../img/snow.png);
+}
+
 .inner {
     max-width: 1400px;
     height: 100%;
